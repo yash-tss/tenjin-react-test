@@ -15,8 +15,7 @@ import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
-  ensureGlobalVariants,
-  useCurrentUser
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { useDataEnv } from "@plasmicapp/react-web/lib/host";
 import Tilt from "@plasmicpkgs/react-parallax-tilt";
@@ -53,7 +52,6 @@ function PlasmicHeroComponent__RenderFunc(props) {
   const $ctx = useDataEnv?.() || {};
   const refsRef = React.useRef({});
   const $refs = refsRef.current;
-  const currentUser = useCurrentUser?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsaFh7XZwKhsDa()
   });
@@ -279,12 +277,12 @@ function PlasmicHeroComponent__RenderFunc(props) {
             data-plasmic-override={overrides.img}
             alt={""}
             className={classNames(sty.img)}
-            displayHeight={"600px"}
+            displayHeight={"450px"}
             displayMaxHeight={"none"}
             displayMaxWidth={"100%"}
             displayMinHeight={"0"}
             displayMinWidth={"0"}
-            displayWidth={"100%"}
+            displayWidth={"auto"}
             loading={"lazy"}
             src={{
               src: tenjinHomeScreenpngMUzlPaZEdjiu,
